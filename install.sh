@@ -7,7 +7,7 @@ PLATFORM=$(python3 -c "import sys, os, platform;print('win' if sys.platform in (
 
 # Remove old version from the tool.
 python3 -c 'import subprocess;subprocess.run(["bash", "-i", "-c", "HackerMode delete"], stdout=subprocess.PIPE, text=True, input="y")' &>/dev/null
-rm -rif HackerMode ~/.HackerMode ~/../usr/bin/HackerMode &>/dev/null
+rm -rif HackerMode ~/.Aminebaggari ~/../usr/bin/Aminebaggari &>/dev/null
 rm -f HackerModeInstall &>/dev/null
 rm -rif AmineMode ~/.AmineMode ~/../usr/bin/AmineMode &>/dev/null
 rm -f AmineMode.install &>/dev/null
@@ -24,7 +24,7 @@ AmineMode_PACKAGES=(
 function download_AmineMode() {
   cd "$HOME"
   rm -f main.zip
-  wget https://github.com/Arab-developers/AmineMode/archive/refs/heads/main.zip &>>$LOG_FILE
+  wget https://github.com/Amine-Legendary/AmineMODEE/archive/refs/heads/main.zip &>>$LOG_FILE
   unzip main.zip &>>$LOG_FILE
   rm -f main.zip
   mv -f AmineMode-main .AmineMode
